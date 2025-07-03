@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Milton Silva</title>
+  <title>Project - Milton Silva</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,9 +36,9 @@
   ======================================================== -->
 </head>
 
-<body class="portfolio-page">
+<body class="portfolio-details-page">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -52,7 +52,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -67,65 +67,57 @@
 
   <main class="main">
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>These are some of the projects I have worked on.</p>
+        <h2>Project: Equity in post-HCT Survival Predictions</h2>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="row gy-4">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-analysis">Data Analysis</li>
-            <li data-filter=".filter-visualization">Data Visualization</li>
-            <li data-filter=".filter-ml">Machine Learning</li>
-          </ul><!-- End Portfolio Filters -->
+          <div class="col-lg-6">
+            <div class="portfolio-details-slider swiper init-swiper">
 
-          <div class="row g-4 isotope-container mt-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="swiper-wrapper align-items-center">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
-              <img src="assets/img/masonry-portfolio/project_14.png" class="img-fluid portfolio-img" alt="">
-              <div class="portfolio-info">
-                <h4>Test Analysis</h4>
-                <p>Analysis of the results of a standarized test using Pandas, Matplotlib, Seaborn and Plotly</p>
-                <!-- <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="project-1.html" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <div class="swiper-slide">
+                  <img src="assets/img/masonry-portfolio/project_3.3.png" alt="">
+                </div>
+
               </div>
-            </div><!-- End Portfolio Item -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
-              <img src="assets/img/masonry-portfolio/project_21.png" class="img-fluid portfolio-img" alt="">
-              <div class="portfolio-info">
-                <h4>Grading system</h4>
-                <p>Comparison of the simulation of different grading systems</p>
-                <!-- <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="project-2.html" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
-              <img src="assets/img/masonry-portfolio/project_3.3.png" class="img-fluid portfolio-img" alt="">
-              <div class="portfolio-info">
-                <h4>Equity in post-HCT Survival Predictions</h4>
-                <p>Model to improve the prediction of transplant survival rates for patients undergoing allogeneic Hematopoietic Cell Transplantation (HCT)</p>
-                <!-- <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="project-3.html" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
- 
-          </div><!-- End Portfolio Container -->
+          <div class="col-lg-6">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Machine Learning</li>
+                <!-- <li><strong>Client</strong>: ASU Company</li> -->
+                <li><strong>Project date</strong>: Jan 2025</li>
+                <li><strong>Project description</strong>: In this notebook, I’ll develop a model to improve the prediction of transplant survival rates for patients undergoing allogeneic Hematopoietic Cell Transplantation (HCT). The goal is to address disparities by bridging diverse data sources, refining algorithms, and reducing biases to ensure equitable outcomes for patients across diverse race groups. The data is downloaded from the Kaggle competition: <a href="https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions/data" target="_blank">https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions/data</a>. The dataset consists of 59 variables related to hematopoietic stem cell transplantation (HSCT), encompassing a range of demographic and medical characteristics of both recipients and donors, such as age, sex, ethnicity, disease status, and treatment details. The primary outcome of interest is event-free survival, represented by the variable efs, while the time to event-free survival is captured by the variable efs_time. These two variables together encode the target for a censored time-to-event analysis. The data, which features equal representation across recipient racial categories including White, Asian, African-American, Native American, Pacific Islander, and More than One Race, was synthetically generated using the data generator from synthcity, trained on a large cohort of real CIBMTR data.</li>
+                <li><strong>Python libraries</strong>: Pandas, mathplotlib, seaborn, plotly</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/MiltonLSM/post-HCT-survival-predictions" target="_blank">https://github.com/MiltonLSM/post-HCT-survival-predictions</a></li>
+              </ul>
+            </div>
+            <!-- <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              </p> -->
+            </div>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 

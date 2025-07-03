@@ -1200,7 +1200,7 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.1); */
   border-radius: 5px;
 }
 
@@ -1434,4 +1434,9 @@ section,
 
 .about .content .basic-list ul{
   list-style-type: disc;
+}
+
+.portfolio .portfolio-img {
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
